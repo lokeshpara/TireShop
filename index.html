@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TireXpert | Premium Tire & Auto Service</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="floating-nav">
+        <div class="nav-brand">TireXpert</div>
+        <div class="desktop-menu">
+            <ul class="nav-items">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="full-menu">
+        <div class="menu-content">
+            <ul class="menu-items">
+                <li style="--i: 0"><a href="#hero">Home</a></li>
+                <li style="--i: 1"><a href="#services">Services</a></li>
+                <li style="--i: 2"><a href="#about">About</a></li>
+                <li style="--i: 3"><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-footer">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-background">
+                <div class="overlay"></div>
+                <div class="animated-shapes">
+                    <div class="shape" data-speed="1"></div>
+                    <div class="shape" data-speed="2"></div>
+                    <div class="shape" data-speed="3"></div>
+                </div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="split-text">
+                        <span class="line">Quality Tires</span>
+                        <span class="line accent">Best Prices</span>
+                        <span class="line">Fast Service</span>
+                    </h1>
+                    <p class="fade-in">Professional Tire Services at Affordable Prices</p>
+                    <div class="hero-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Same Day Service</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-dollar-sign"></i>
+                            <span>Best Price Guarantee</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Expert Installation</span>
+                        </div>
+                    </div>
+                    <div class="cta-container single-button">
+                        <a href="#services" class="cta-button primary">
+                            <span class="button-content">
+                                <i class="fas fa-search"></i>
+                                <span>Explore Services</span>
+                            </span>
+                            <span class="button-hover">
+                                <span class="hover-text">View All</span>
+                                <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/tire-service.png" alt="Professional Tire Service" class="main-image">
+                    <div class="floating-badge">
+                        <span class="discount">20% OFF</span>
+                        <span class="offer">New Tires</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-bottom">
+                <div class="trust-badges">
+                    <div class="badge" style="--i: 1">
+                        <i class="fas fa-star"></i>
+                        <span>5-Star Rated</span>
+                    </div>
+                    <div class="badge" style="--i: 2">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certified Experts</span>
+                    </div>
+                    <div class="badge" style="--i: 3">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Service Guarantee</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive Tire & Auto Care Solutions</p>
+            </div>
+            
+            <div class="services-container">
+                
+                
+                <div class="service-grid">
+                    <!-- Tire Services -->
+                    <div class="service-card featured" data-category="tires">
+                        <div class="service-icon">
+                            <i class="fas fa-dharmachakra"></i>
+                        </div>
+                        <h3>Tire Services</h3>
+                        <div class="service-details">
+                            <ul class="service-list">
+                                <li>New and Used Tires</li>
+                                <li>Tire Repair Services</li>
+                                <li>Tire Rotation</li>
+                                <li>Tire Balancing</li>
+                                <li>Professional Mounting</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Auto Maintenance -->
+                    <div class="service-card" data-category="maintenance">
+                        <div class="service-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h3>Auto Services</h3>
+                        <div class="service-details">
+                            <ul class="service-list">
+                                <li>Brake Service</li>
+                                <li>Oil Change Service</li>
+                                <li>Starters & Alternators</li>
+                                <li>Water Pumps</li>
+                                <li>Engine Tune-ups</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Specialty Services -->
+                    <div class="service-card" data-category="specialty">
+                        <div class="service-icon">
+                            <i class="fas fa-truck-monster"></i>
+                        </div>
+                        <h3>Specialty Services</h3>
+                        <div class="service-details">
+                            <ul class="service-list">
+                                <li>ATV Tire Pair Service</li>
+                                <li>Lawn Mower Tire Service</li>
+                                <li>Custom Wheel Fitting</li>
+                                <li>Emergency Tire Service</li>
+                                <li>Seasonal Tire Change</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-info">
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h4>Quick Service</h4>
+                        <p>Fast and efficient service</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Warranty</h4>
+                        <p>Service guarantee</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-thumbs-up"></i>
+                        <h4>Expert Service</h4>
+                        <p>Professional technicians</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-container">
+                <div class="about-content">
+                    <div class="section-header">
+                        <h2>Why Choose TireXpert?</h2>
+                        <p>Your trusted partner in tire care and automotive excellence</p>
+                    </div>
+                    
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <h3>Our Story</h3>
+                            <p>Founded in 2024, TireXpert emerged from a vision to revolutionize the tire service industry. We combine cutting-edge technology with expert craftsmanship to deliver unparalleled service quality and customer satisfaction.</p>
+                            
+                            <div class="stats-container">
+                                <div class="stat-item">
+                                    <span class="stat-number">5000+</span>
+                                    <span class="stat-label">Happy Customers</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">15+</span>
+                                    <span class="stat-label">Expert Technicians</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">100%</span>
+                                    <span class="stat-label">Satisfaction Rate</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="features-grid">
+                            <div class="feature-item" data-speed="1.1">
+                                <div class="feature-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <h4>Certified Experts</h4>
+                                <p>Our team consists of certified professionals with years of experience in tire service and auto repair.</p>
+                            </div>
+                            
+                            <div class="feature-item" data-speed="1.2">
+                                <div class="feature-icon">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <h4>Advanced Technology</h4>
+                                <p>State-of-the-art equipment and diagnostic tools for precise service delivery.</p>
+                            </div>
+                            
+                            <div class="feature-item" data-speed="1.3">
+                                <div class="feature-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <h4>Quick Service</h4>
+                                <p>Efficient service process with minimal wait times and maximum quality.</p>
+                            </div>
+                            
+                            <div class="feature-item" data-speed="1.4">
+                                <div class="feature-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h4>Warranty Guaranteed</h4>
+                                <p>All our services come with comprehensive warranty coverage for your peace of mind.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add the testimonials section here -->
+                    <div class="testimonials">
+                        <h3>What Our Customers Say</h3>
+                        <div class="testimonial-container">
+                            <div class="testimonial-track">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                        <p>"Very satisfied with TireXpert's great prices and super nice workers. They stayed open late to help me after I showed up last minute and still gave me a good deal. Very grateful!"</p>
+                                        <div class="testimonial-author">
+                                            <div class="author-info">
+                                                <span class="author-name">Eddie Chairez</span>
+                                                <span class="author-title">Verified Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                        <p>"Excellent service. Always available. Clean and so friendly. Highly recommended! Amazing prices and professional staff."</p>
+                                        <div class="testimonial-author">
+                                            <div class="author-info">
+                                                <span class="author-name">Rebecca Espada</span>
+                                                <span class="author-title">Verified Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                        <p>"Best tire service in town! Quick service, fair prices, and extremely knowledgeable staff. Will definitely return!"</p>
+                                        <div class="testimonial-author">
+                                            <div class="author-info">
+                                                <span class="author-name">Michael Chen</span>
+                                                <span class="author-title">Verified Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                        <p>"Best tire service in town! Quick service, fair prices, and extremely knowledgeable staff. Will definitely return!"</p>
+                                        <div class="testimonial-author">
+                                            <div class="author-info">
+                                                <span class="author-name">Michael Chen</span>
+                                                <span class="author-title">Verified Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                        <p>"Best tire service in town! Quick service, fair prices, and extremely knowledgeable staff. Will definitely return!"</p>
+                                        <div class="testimonial-author">
+                                            <div class="author-info">
+                                                <span class="author-name">Michael Chen</span>
+                                                <span class="author-title">Verified Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                        <p>"Best tire service in town! Quick service, fair prices, and extremely knowledgeable staff. Will definitely return!"</p>
+                                        <div class="testimonial-author">
+                                            <div class="author-info">
+                                                <span class="author-name">Michael Chen</span>
+                                                <span class="author-title">Verified Customer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="particles">
+                <!-- Particles will be added via JavaScript -->
+            </div>
+            <div class="contact-content">
+                <h2 class="animate-title">Get in Touch</h2>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>(817) 406-4445</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>730tireshop@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-location-dot"></i>
+                        <p>1832 Farm to Market Rd 730 N, Azle, Texas 76020</p>
+                    </div>
+                    <div class="hours-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="hours-content">
+                            <p><strong>Opening Hours</strong></p>
+                            <p><strong>Mon - Fri: 8:00 am – 6:00 pm</strong></p>
+                            <p><strong>Saturday: 8:00 am – 6:00 pm</strong></p>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
