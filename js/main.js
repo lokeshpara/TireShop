@@ -514,11 +514,11 @@ updateCardsOpacity();
 activateCard(cards[0]);
 
 // Update on scroll
-track.addEventListener('scroll', () => {
-    if (!isScrolling) {
-        updateCardsOpacity();
-    }
-}); 
+// track.addEventListener('scroll', () => {
+//     if (!isScrolling) {
+//         updateCardsOpacity();
+//     }
+// }); 
 
 
 // new
@@ -604,18 +604,10 @@ gsap.from('.hours-item', {
 // new
 
 // Add scroll event listener for navigation background
-window.addEventListener('scroll', function() {
-    const nav = document.querySelector('.floating-nav');
-    console(window.screenX)
-    if (window.scrollX > 40) { // Check if scroll position is greater than 40px
-        nav.classList.add('scrolled');
-    } else {
-        nav.classList.remove('scrolled');
-    }
-});
 
-window.addEventListener('scroll', function() {
-    // Code to be executed on scroll
-    console.log('Scrolled!');
-  });
-  
+
+document.addEventListener("DOMContentLoaded", function() {
+    window.addEventListener("scroll", function() {
+        console.log("Scrolling detected");
+    });
+});
